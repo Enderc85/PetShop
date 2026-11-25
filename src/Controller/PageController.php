@@ -16,9 +16,6 @@ class PageController extends AbstractController
     {
         return $this->render('page/index.html.twig', []);
     }
-    
-
-
 
     #[Route('/about', name: 'about')]
     public function about(): Response
@@ -29,11 +26,6 @@ class PageController extends AbstractController
     public function service(): Response
     {
         return $this->render('page/service.html.twig', []);
-    }
-    #[Route('/product', name: 'product')]
-    public function product(): Response
-    {
-        return $this->render('product/product.html.twig', []);
     }
     #[Route('/price', name: 'price')]
     public function price(): Response
@@ -49,16 +41,6 @@ class PageController extends AbstractController
     public function testimonial(): Response
     {
         return $this->render('page/testimonial.html.twig', []);
-    }
-    #[Route('/blog', name: 'blog')]
-    public function blog(): Response
-    {
-        return $this->render('page/blog.html.twig', []);
-    }
-    #[Route('/detail', name: 'detail')]
-    public function detail(): Response
-    {
-        return $this->render('page/detail.html.twig', []);
     }
     #[Route('/contact', name: 'contact')]
     public function contact(): Response
